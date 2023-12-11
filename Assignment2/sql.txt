@@ -1,0 +1,9 @@
+create table family(
+    userID		int(11) 	primary key		auto_increment,
+    firstName	varchar(50)	not null,
+    lastName	varchar(50) not null,
+    username	varchar(50) not null	unique,
+    email		varchar(128) 	not null	unique,
+    password 	text		not null,
+    mailList	varchar(3)
+);

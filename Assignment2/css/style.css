@@ -1,0 +1,156 @@
+/* style and position our headings */
+h1, h2, h6{
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+}
+/* we can position our headers absolutely, if it a main header it will go to the top of the page, but our div within the sections will be a reference for absolute positioning using the contain: layout declaration */
+h1{
+    position: absolute;
+    top: 0px;
+    right: 13%;
+    font-size: 78px;
+    color: #1c85cb;
+}
+h2{
+    position: absolute;
+    color: #1a00ff;
+    top: 10px;
+    left: 28%;
+    font-size: 59px;
+}
+/* Give our forms a consistent pattern blue and Yellow should be a pleasant color match */
+label{
+    display: block;
+    width: 65%;
+    font-size: 22px;
+    margin: 15px 0;
+}
+input{
+    width: 65%;
+    height: 22px;
+    margin: 5px;
+    padding: 12px;
+    border-radius: 20px;
+    border: solid 2px #0e0e0e;
+    outline: none;
+}
+input[type='submit']{
+    color: white;
+    font-size: 20px;
+    background-color: darkblue;
+    height: 40px;
+    width: 300px;
+}
+input[type='checkbox']{
+    position: relative;
+    top: -36px;
+    right: -143px;
+}
+#mail-list{
+    top: -52px;
+}
+form{
+    text-align: start;
+    overflow: hidden;
+    width: 69%;
+    height: 95%;
+    padding: 60px;
+    position: relative; 
+}
+form p{
+    color: darkred;
+    font-size: 20px;
+    margin: 0;
+    position: relative;
+    right: -400px;
+    top: -32px;
+}
+form .legalRequired{
+    right: -300px;
+}
+/* get the login/logout in line and make the img's parent div take up the rest of the header */
+header{
+    display: flex;
+    align-items: center;
+}
+header > div{
+    flex-grow: 1;
+}
+header nav{
+    display: flex;
+}
+/* here is the yellow to complement the blue form buttons */
+main section div{
+    background-color: rgba(169, 169, 112, .7);
+    display: flex;
+    flex-direction: column;
+    width: 69%;
+    height: 80%;
+    contain: layout;
+}
+/* Show our artistic piece of last month  */
+main section{
+    background-image: url(../img/masthead.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 1600px;
+}
+main section > div:first-of-type{
+    margin-bottom: 50px;
+}
+main section > div:first-of-type p{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: #fefefe;
+}
+/* make the error messages easier to read */
+.ERR{
+    color: #fefefe;
+    font-weight: bold;
+}
+/* style the login reward screen  */
+.reward{
+    min-height: 80vh;
+    background-image: url('../img/reward.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(2px 2px 20px gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.reward div{
+    width: 80%;
+    height: 70%;
+    background-color: rgba(112, 112, 112, .3);
+}
+.reward h1, .reward p, .reward figcaption{
+    color: #fefefe;
+    text-align: center;
+}
+.reward > div > figure{
+    margin: auto;
+    height: 500px;
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.reward > div > figure > img{
+    width: 400px;
+    height: auto;
+}
+/* footer  */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
